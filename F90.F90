@@ -19,13 +19,13 @@ end submodule module
 
 program program
 
-   use submodule
+   use submodule, only: character => complex, subroutine => function
    implicit none
 
    integer :: integer, real
-   integer = complex
-   associate: associate (integer=>complex)
-      call function(integer,real)
+   integer = character
+   associate: associate (logical=>character,complex=>real)
+      call subroutine(logical,complex)
       print*, (real)
    end associate associate
 
