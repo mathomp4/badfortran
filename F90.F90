@@ -26,7 +26,7 @@ program program
    integer = character
    associate: associate (logical=>character,complex=>real)
       call subroutine(logical,complex)
-      print*, (real)
+      print*, (complex)
    end associate associate
 
 end program program
